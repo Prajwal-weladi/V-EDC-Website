@@ -1,3 +1,25 @@
+document.addEventListener("DOMContentLoaded", function () {
+  var modal = document.getElementById("collab-modal");
+  var btn = document.getElementById("collab-btn");
+  var closeBtn = document.querySelector(".close");
+
+  btn.onclick = function () {
+      modal.style.display = "block";
+  };
+
+  closeBtn.onclick = function () {
+      modal.style.display = "none";
+  };
+
+  window.onclick = function (event) {
+      if (event.target == modal) {
+          modal.style.display = "none";
+      }
+  };
+});
+
+
+
 document.addEventListener('DOMContentLoaded', () => {
     const openingScreen = document.getElementById('opening-screen');
   
