@@ -1,0 +1,85 @@
+.section-header {
+    background: #6A0DAD;
+    padding: 40px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin: 20px auto; /* Center the section and adjust spacing */
+    max-width: 1000px;
+}
+
+
+
+.section-divider {
+    width: 50%;
+    margin: 0 auto 20px; /* Centered and spaced */
+    border: 2px solid #050036; /* Blue color for the divider */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.intro-text {
+    
+    font-size: 1.1em; /* Slightly larger font for readability */
+    color: #ffffff; /* Dark gray color for text */
+    line-height: 1.6; /* Improved line spacing */
+}
+
+.goals {
+    margin-top: 20px; /* Space above the goals section */
+}
+
+.goals a {
+    font-weight: bold; /* Bold for goal headings */
+    color: #ffffff; /* Blue color for links */
+}
+
+ol {
+    margin-left: 20px; /* Indent list items */
+    color: #ffffff; /* Darker color for list items */
+    font-size: 1.1em; /* Increase font size for better visibility */
+}
+
+ol li {
+    margin-bottom: 10px; /* Space between list items */
+}
+
+.welcome-card {
+    background: linear-gradient(135deg, #ffffff 30%, #ffffff 100%);
+    border-radius: 15px;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+.welcome-card:hover {
+    transform: scale(1.05);
+}
+
+
+.subheading {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #388e3c;
+    margin-bottom: 10px;
+}
+
+
+.image-container {
+    width: 80vw;         /* Set the width of the container */
+    height: 500px;        /* Set the height of the container */
+    margin: 30px auto;    /* Add margin to the top and bottom for distance */
+    display: flex;        /* Use flexbox for centering the image */
+    justify-content: center;  /* Horizontally center the image inside the container */
+    align-items: center;  /* Vertically center the image inside the container */
+    overflow: hidden;     /* Ensure the image stays within the container */
+    border: 2px solid #ccc; /* Optional: Add a border around the box */
+    border-radius: 8px;   /* Optional: Add rounded corners */
+}
+
+.center-image {
+    width: 100%;          /* The image will take up 100% of the container width */
+    height: 100%;         /* The image will take up 100% of the container height */
+    object-fit: cover;    /* Ensures the image covers the container without distorting it */
+}
+
