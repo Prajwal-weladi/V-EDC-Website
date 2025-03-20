@@ -1,22 +1,32 @@
+// Wait for the DOM to fully load before adding event listeners
 document.addEventListener("DOMContentLoaded", function () {
-  var modal = document.getElementById("collab-modal");
-  var btn = document.getElementById("collab-btn");
-  var closeBtn = document.querySelector(".close");
+  const collabBtn = document.getElementById("collab-btn");
+  const popup = document.getElementById("collab-modal"); // Updated ID
+  const closePopup = document.querySelector(".close"); // Updated to select by class
 
-  btn.onclick = function () {
-      modal.style.display = "block";
-  };
+  if (collabBtn && popup && closePopup) {
+      // Open the pop-up when clicking the button
+      collabBtn.addEventListener("click", function () {
+          popup.style.display = "flex"; // Ensuring it appears properly
+      });
 
-  closeBtn.onclick = function () {
-      modal.style.display = "none";
-  };
+      // Close the pop-up when clicking the close button
+      closePopup.addEventListener("click", function () {
+          popup.style.display = "none";
+      });
 
-  window.onclick = function (event) {
-      if (event.target == modal) {
-          modal.style.display = "none";
-      }
-  };
+      // Close when clicking outside the pop-up
+      window.addEventListener("click", function (event) {
+          if (event.target === popup) {
+              popup.style.display = "none";
+          }
+      });
+  } else {
+      console.error("Elements not found! Check your IDs in HTML.");
+  }
 });
+
+
 
 
 
